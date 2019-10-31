@@ -90,9 +90,17 @@ app.post('/submitAnswers', (request, response) => {
   let rawdata = fs.readFileSync(__dirname + '/answers.json');
   let answers = JSON.parse(rawdata);
   let dir = "DSP";
+  let textFilePath = dir + "/" + request.fields.roll + ".txt"
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
+  } else {
+    if (fs.existsSync(textFilePath)) {
+      //file exists
+      return response.redirect(`http://${process.env.HOST}:${process.env.PORT}/#sorry`);
+
+    }
   }
+
   let count = 0;
   let content = "No.\tAnswer\tCorrectAnswer\n";
 
@@ -106,14 +114,13 @@ app.post('/submitAnswers', (request, response) => {
   }
   content += "Total Marks: " + count + "/10.";
 
-  fs.writeFile(dir + "/" + request.fields.roll + ".txt", content, function (err, file) {
+  fs.writeFile(textFilePath, content, function (err, file) {
     if (err) throw err;
     console.log(request.fields.roll + ".txt saved");
   });
 
   console.log(answers);
+  return response.redirect(`http://${process.env.HOST}:${process.env.PORT}/#thankyou`);
+
 });
 
-function countProperties(obj) {
-  return Object.keys(obj).length;
-}

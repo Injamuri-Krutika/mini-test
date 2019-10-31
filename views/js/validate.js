@@ -10,23 +10,23 @@ if (!config_JSON) {
 function validate() {
   var questionsList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
   var allchecked = true;
-  // for (var k = 0; k < questionsList.length; k++) {
-  //   var ele = document.getElementsByName(questionsList[k]);
-  //   var checked = false;
-  //   for (var i = 0; i < ele.length; i++) {
-  //     if (ele[i].checked) {
-  //       checked = true;
-  //       break;
-  //     }
-  //   }
-  //   if (!checked) {
-  //     console.log("disabled");
-  //     document.getElementById('uploadAnswers').disabled = true;
-  //     allchecked = false;
-  //     break;
-  //   }
+  for (var k = 0; k < questionsList.length; k++) {
+    var ele = document.getElementsByName(questionsList[k]);
+    var checked = false;
+    for (var i = 0; i < ele.length; i++) {
+      if (ele[i].checked) {
+        checked = true;
+        break;
+      }
+    }
+    if (!checked) {
+      console.log("disabled");
+      document.getElementById('uploadAnswers').disabled = true;
+      allchecked = false;
+      break;
+    }
 
-  // }
+  }
 
   if (allchecked && document.getElementById("roll").value != "") {
     console.log("enabled");

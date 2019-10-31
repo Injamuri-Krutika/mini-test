@@ -1,0 +1,12 @@
+No.	Answer	CorrectAnswer
+1.	A	D
+2.	A	B
+3.	A	D
+4.	A	C
+5.	A	A
+6.	A	A
+7.	A	B
+8.	A	D
+9.	A	C
+10.	A	B
+Total Marks: 2/10.

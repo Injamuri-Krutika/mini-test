@@ -1,6 +1,6 @@
 {
   "examName": "DSP Lab Minor 1",
-  "serverHostname": "localhost",
+  "serverHostname": "10.5.0.93",
 
   "serverPort": "8080"
 }
