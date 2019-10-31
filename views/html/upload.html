@@ -1,0 +1,96 @@
+<div class="centeritems mdl-grid top-bottom-margin  ">
+  <div class="mdl-layout-spacer"></div>
+  <div class="mdl-cell mdl-cell--4-col mdl-typography--text-center">
+    <div class="demo-card-square mdl-card mdl-shadow--16dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text mdl-typography--text-center">
+          Algo Lab Minor 1
+        </h2>
+      </div>
+      <form id="uploadForm" method="post" enctype="multipart/form-data">
+        <input
+          class="mdl-textfield__input"
+          type="hidden"
+          name="exam"
+          id="exam"
+          value="Algo"
+          readonly
+        />
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <input
+            class="mdl-textfield__input"
+            type="text"
+            id="roll"
+            name="roll"
+            onkeyup="validate()"
+            placeholder="Roll No*"
+          />
+          <!-- <label class="mdl-textfield__label" for="roll">Roll No*</label> -->
+        </div>
+        <!-- <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <input
+            class="mdl-textfield__input"
+            type="text"
+            name="set"
+            pattern="-?[0-9]*(\.[0-9]+)?"
+            id="set"
+            onkeyup="validate()"
+            placeholder="Set Number*"
+          />
+          <label class="mdl-textfield__label" for="set">Set Number*</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div> -->
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--file mdl-textfield--floating-label"
+        >
+          <input
+            class="mdl-textfield__input"
+            type="text"
+            id="uploadFile"
+            name="uploadFile"
+            accept=".zip"
+            readonly
+            placeholder="Zip File*"
+          />
+          <div
+            class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file"
+          >
+            <i class="material-icons">attach_file</i
+            ><input
+              type="file"
+              id="uploadBtn"
+              name="zip"
+              onchange="validateFile()"
+            />
+          </div>
+        </div>
+        <span style="color: red;display: block;padding-bottom: 2%;"
+          >Only ZIP files allowed.</span
+        >
+        <div class="mdl-card__actions mdl-card--border">
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+            id="uploadDetails"
+            onclick="submitFile()"
+            disabled
+          >
+            Upload Details
+          </button>
+          <input
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+            type="reset"
+            value="Reset"
+            style="margin-left:5%"
+            onclick="window.location.reload()"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="mdl-layout-spacer"></div>
+</div>
+<!-- <script src="../js/upload_file.js"></script> -->

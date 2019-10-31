@@ -1,0 +1,861 @@
+<html>
+  <head>
+    <title>Lab Exam</title>
+    <meta charset="utf-8" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com"
+    /> -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="material-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/material.min.css" />
+  </head>
+  <body>
+    <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">DSP Lab Assignment</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <!-- <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#question"
+              >Question
+              <i class="material-icons">format_list_bulleted</i>
+            </a>
+            <a class="mdl-navigation__link" href="#upload" onclick="validate();"
+              >Upload
+              <i class="material-icons">cloud_upload</i>
+            </a>
+            <a class="mdl-navigation__link" href="#help"
+              >Help
+              <i class="material-icons">info</i>
+            </a>
+          </nav> -->
+        </div>
+      </header>
+      <!-- <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Lab Exam</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#question">
+            <i class="material-icons">format_list_bulleted</i>&emsp;Question
+          </a>
+          <a class="mdl-navigation__link" href="#upload" onclick="validate();">
+            <i class="material-icons">cloud_upload</i>&emsp;Upload
+          </a>
+          <a class="mdl-navigation__link" href="#help">
+            <i class="material-icons">info</i> &emsp;Help
+          </a>
+        </nav>
+      </div> -->
+      <main class="mdl-layout__content">
+        <div class="page-content " id="app">
+          <div
+            class="center-align"
+            style="font-size: 24px;width:90%;margin:1em;line-height: 28px;"
+          >
+            <form id="questionAnswer" method="post">
+              1.Which of the following algorithmic paradigm is used in the merge
+              sort?<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="1A"
+                >
+                  <input
+                    type="radio"
+                    id="1A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="1"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. Dynamic Programming</span>
+                </label>
+
+                <br />
+                <br />
+
+                <!-- Radio Button 2 -->
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="1B"
+                >
+                  <input
+                    type="radio"
+                    id="1B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="1"
+                  />
+                  <span class="mdl-radio__label">B. BackTracking </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="1C"
+                >
+                  <input
+                    type="radio"
+                    id="1C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="1"
+                  />
+                  <span class="mdl-radio__label">C. Greedy method </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="1D"
+                >
+                  <input
+                    type="radio"
+                    id="1D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="1"
+                  />
+                  <span class="mdl-radio__label">D. Divide and Conquer </span>
+                </label>
+              </div>
+              <br />
+              <br />
+
+              2.What data structures you should use for dictionary searching and
+              it should be capable of doing spell check also ?<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="2A"
+                >
+                  <input
+                    type="radio"
+                    id="2A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="2"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. Array </span>
+                </label>
+
+                <br />
+                <br />
+
+                <!-- Radio Button 2 -->
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="2B"
+                >
+                  <input
+                    type="radio"
+                    id="2B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="2"
+                  />
+                  <span class="mdl-radio__label">B. Hashing </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="2C"
+                >
+                  <input
+                    type="radio"
+                    id="2C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="2"
+                  />
+                  <span class="mdl-radio__label">C. Linked list </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="2D"
+                >
+                  <input
+                    type="radio"
+                    id="2D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="2"
+                  />
+                  <span class="mdl-radio__label">D. Tree </span>
+                </label>
+              </div>
+              <br /><br />
+              3. A sort which relatively passes through a list to exchange the
+              first element with any element less than it and then repeats with
+              a new first element is called <br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="3A"
+                >
+                  <input
+                    type="radio"
+                    id="3A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="3"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. insertion sort. </span>
+                </label>
+
+                <br />
+                <br />
+
+                <!-- Radio Button 3 -->
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="3B"
+                >
+                  <input
+                    type="radio"
+                    id="3B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="3"
+                  />
+                  <span class="mdl-radio__label">B. selection sort. </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="3C"
+                >
+                  <input
+                    type="radio"
+                    id="3C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="3"
+                  />
+                  <span class="mdl-radio__label">C. heap sort. </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="3D"
+                >
+                  <input
+                    type="radio"
+                    id="3D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="3"
+                  />
+                  <span class="mdl-radio__label">D. quick sort. </span>
+                </label>
+              </div>
+              <br /><br />
+
+              4.The number of interchanges required to sort 5, 1, 6, 2 4 in
+              ascending order using Bubble Sort is<br /><br />
+
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="4A"
+                >
+                  <input
+                    type="radio"
+                    id="4A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="4"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. 6 </span>
+                </label>
+
+                <br />
+                <br />
+
+                <!-- Radio Button 4 -->
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="4B"
+                >
+                  <input
+                    type="radio"
+                    id="4B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="4"
+                  />
+                  <span class="mdl-radio__label">B. 7</span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="4C"
+                >
+                  <input
+                    type="radio"
+                    id="4C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="4"
+                  />
+                  <span class="mdl-radio__label">C. 5</span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="4D"
+                >
+                  <input
+                    type="radio"
+                    id="4D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="4"
+                  />
+                  <span class="mdl-radio__label">D. 8</span>
+                </label>
+              </div>
+              <br /><br />
+
+              5. Which of the following sorting methods would be most suitable
+              for sorting a list which is almost sorted<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="5A"
+                >
+                  <input
+                    type="radio"
+                    id="5A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="5"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. Bubble Sort </span>
+                </label>
+
+                <br />
+                <br />
+
+                <!-- Radio Button 5 -->
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="5B"
+                >
+                  <input
+                    type="radio"
+                    id="5B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="5"
+                  />
+                  <span class="mdl-radio__label">B. Insertion Sort </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="5C"
+                >
+                  <input
+                    type="radio"
+                    id="5C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="5"
+                  />
+                  <span class="mdl-radio__label">C. Selection Sort </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="5D"
+                >
+                  <input
+                    type="radio"
+                    id="5D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="5"
+                  />
+                  <span class="mdl-radio__label">D. Quick Sort </span>
+                </label>
+              </div>
+              <br /><br />
+
+              6. The best average behaviour is shown by<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="6A"
+                >
+                  <input
+                    type="radio"
+                    id="6A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="6"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. Quick Sort </span>
+                </label>
+
+                <br />
+                <br />
+
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="6B"
+                >
+                  <input
+                    type="radio"
+                    id="6B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="6"
+                  />
+                  <span class="mdl-radio__label">B. Merge Sort </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="6C"
+                >
+                  <input
+                    type="radio"
+                    id="6C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="6"
+                  />
+                  <span class="mdl-radio__label">C. Insertion Sort </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="6D"
+                >
+                  <input
+                    type="radio"
+                    id="6D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="6"
+                  />
+                  <span class="mdl-radio__label">D. Heap Sort </span>
+                </label>
+              </div>
+              <br /><br />
+
+              7. In order to get the contents of a Binary search tree in
+              ascending order, one has to traverse it in<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="7A"
+                >
+                  <input
+                    type="radio"
+                    id="7A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="7"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. pre-order. </span>
+                </label>
+
+                <br />
+                <br />
+
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="7B"
+                >
+                  <input
+                    type="radio"
+                    id="7B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="7"
+                  />
+                  <span class="mdl-radio__label">B. in-order. </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="7C"
+                >
+                  <input
+                    type="radio"
+                    id="7C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="7"
+                  />
+                  <span class="mdl-radio__label">C. post order. </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="7D"
+                >
+                  <input
+                    type="radio"
+                    id="7D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="7"
+                  />
+                  <span class="mdl-radio__label">D. not possible. </span>
+                </label>
+              </div>
+              <br /><br />
+
+              8.The operation of processing each element in the list is known
+              as<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="8A"
+                >
+                  <input
+                    type="radio"
+                    id="8A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="8"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. Sorting </span>
+                </label>
+
+                <br />
+                <br />
+
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="8B"
+                >
+                  <input
+                    type="radio"
+                    id="8B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="8"
+                  />
+                  <span class="mdl-radio__label">B. Merging </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="8C"
+                >
+                  <input
+                    type="radio"
+                    id="8C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="8"
+                  />
+                  <span class="mdl-radio__label">C. Inserting </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="8D"
+                >
+                  <input
+                    type="radio"
+                    id="8D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="8"
+                  />
+                  <span class="mdl-radio__label">D. Traversal </span>
+                </label>
+              </div>
+              <br /><br />
+
+              9.A sort which uses the binary tree concept such that any number
+              is larger than all the numbers in the subtree below it is
+              called<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="9A"
+                >
+                  <input
+                    type="radio"
+                    id="9A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="9"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. Selection sort </span>
+                </label>
+
+                <br />
+                <br />
+
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="9B"
+                >
+                  <input
+                    type="radio"
+                    id="9B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="9"
+                  />
+                  <span class="mdl-radio__label">B. Insertion sort </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="9C"
+                >
+                  <input
+                    type="radio"
+                    id="9C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="9"
+                  />
+                  <span class="mdl-radio__label">C. Heap sort </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="9D"
+                >
+                  <input
+                    type="radio"
+                    id="9D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="9"
+                  />
+                  <span class="mdl-radio__label">D. Quick sort </span>
+                </label>
+              </div>
+              <br /><br />
+
+              10. The in-order traversal of tree will yield a sorted listing of
+              elements of tree in _________________.<br /><br />
+              <div style="margin:0 1em ; width:100%">
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="10A"
+                >
+                  <input
+                    type="radio"
+                    id="10A"
+                    value="A"
+                    class="mdl-radio__button"
+                    name="10"
+                  />
+                  <!-- intitial state checked using attribute checked  -->
+                  <span class="mdl-radio__label">A. binary trees </span>
+                </label>
+
+                <br />
+                <br />
+
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="10B"
+                >
+                  <input
+                    type="radio"
+                    id="10B"
+                    value="B"
+                    class="mdl-radio__button"
+                    name="10"
+                  />
+                  <span class="mdl-radio__label">B. binary search trees </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="10C"
+                >
+                  <input
+                    type="radio"
+                    id="10C"
+                    value="C"
+                    class="mdl-radio__button"
+                    name="10"
+                  />
+                  <span class="mdl-radio__label">C. heaps </span>
+                </label>
+                <br />
+                <br />
+                <label
+                  class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                  onclick="validate();"
+                  for="10D"
+                >
+                  <input
+                    type="radio"
+                    id="10D"
+                    value="D"
+                    class="mdl-radio__button"
+                    name="10"
+                  />
+                  <span class="mdl-radio__label">D. binary heaps </span>
+                </label>
+              </div>
+              <br /><br />
+
+              <div class="centeritems mdl-grid top-bottom-margin  ">
+                <div class="mdl-layout-spacer"></div>
+                <div
+                  class="mdl-cell mdl-cell--4-col mdl-typography--text-center"
+                >
+                  <div class="demo-card-square mdl-card mdl-shadow--16dp">
+                    <div class="mdl-card__title">
+                      <h2
+                        class="mdl-card__title-text mdl-typography--text-center"
+                      >
+                        Submit Answers
+                      </h2>
+                    </div>
+                    <div
+                      class="mdl-grid mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                    >
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--10-col">
+                        <input
+                          class="mdl-textfield__input"
+                          type="text"
+                          id="roll"
+                          name="roll"
+                          onkeyup="validate()"
+                          placeholder="Roll No*"
+                        />
+                      </div>
+
+                      <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-card__actions ">
+                      <button
+                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                        id="uploadAnswers"
+                        onclick="submitAnswers()"
+                        disabled
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-layout-spacer"></div>
+              </div>
+            </form>
+
+            <!-- <a
+              class="centeritems mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+              href="#upload"
+            >
+              Start Exam
+            </a> -->
+          </div>
+        </div>
+      </main>
+      <footer style="background-color: black;color: #fff">
+        <div class="centeritems mdl-grid ">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
+            <div class="mdl-logo">
+              <!-- <img src="./images/dumb_martians.png" height="50" width="50" /> -->
+            </div>
+            &#128515; Have a good day &#128515;
+          </div>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script defer src="./js/material.min.js"></script>
+    <!-- <script src="./js/route.js"></script>
+    <script src="./js/router.js"></script>
+    <script src="./js/app.js"></script> -->
+    <script src="./js/marked.min.js"></script>
+    <script src="./js/loadConfigFile.js"></script>
+    <script src="./js/validate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "name": "laziness",
+  "version": "0.1.0",
+  "description": "An application to collect all the submissions after the lab exam is done",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon file-server.js --exec babel-node --presets babel-preset-env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Injamuri-Krutika/Laziness.git"
+  },
+  "keywords": [
+    "File",
+    "server",
+    "Material",
+    "Design"
+  ],
+  "author": "Krutika Injamuri, Sai Somanath Komanduri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Injamuri-Krutika/Laziness/issues"
+  },
+  "homepage": "https://github.com/Injamuri-Krutika/Laziness#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "fs-extra": "^8.1.0",
+    "material-design-icons": "^3.0.1",
+    "multer": "^1.4.2"
+  }
+}
